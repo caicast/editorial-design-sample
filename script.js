@@ -1,50 +1,62 @@
-// GSAP library
-// https://unpkg.co/gsap@3/dist/gsap.min.js
+/* Setup Scrolling */
+html,
+body {
+  margin: 0;
+  height: 100%;
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
 
-// ScrollTrigger plugin
-// https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
 
-// Install Plugin
-gsap.registerPlugin(ScrollTrigger);
+/* Panel Defaults */
+.panel {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 
-// defaults
-ScrollTrigger.defaults({
-  toggleActions: "restart pause resume pause"
-});
+  position: relative;
+  box-sizing: border-box;
 
-// Panel One
-gsap.to(".one h1", {
-  scrollTrigger: "one",
-  color: "brown",
-  duration: 3,
-  rotate: 0,
-  opacity: 1
-});
+  padding: 3em;
+}
 
-// Panel Two
-gsap.to(".two", {
-  scrollTrigger: "two"
-});
+.one {
+  background: #fff;
+}
 
-// Panel Three
-gsap.to(".three p", {
-  scrollTrigger: "three",
-  letterSpacing: 0
-});
+.two {
+  background: url(https://images.unsplash.com/photo-1500353391678-d7b57979d6d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE3MDExOTk0ODF8&ixlib=rb-4.0.3&q=80&w=400) no-repeat;
+}
 
-// Panel Four
-gsap.to(".four", {
-  scrollTrigger: "four"
-});
+.three {
+  background: #bdc3c7;
+}
 
-// Panel Five
-gsap.to(".five", {
-  scrollTrigger: "five"
-});
+.four {
+  background: #7b7d7d;
+}
 
-// Panel Six
-gsap.to(".six", {
-  scrollTrigger: "six",
-  translateX: 0,
-  duration: 5
-});
+.five {
+  background: #333;
+}
+
+.one h1 {
+  transform: rotate(90deg);
+  opacity: 0;
+}
+
+.three p {
+  letter-spacing: 100px;
+}
+
+.six {
+/*   transform: translateX(-500px) */
+  translateX: -500px
+}
