@@ -1,5 +1,5 @@
-# DESN 368 Web Design 1 Starter Template
+# Coffee Editorial Design
 
-> **NOTE:** This is a work in progress.
+> My favorite coffee is a latte
 
-DIY Template, starter, boilerplate, prototype, etc. for future Web Design projects. 
+This is an example of editorial design, the topic being, coffee
